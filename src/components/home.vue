@@ -9,7 +9,7 @@
           </div>
         </div>
         <div class="flag-list">
-          <img v-for="(item, index) in list.slice(31)" :src="item.image" @click="goDetail(index + 31)">
+          <img v-for="(item, index) in list.slice(30)" :src="item.image" @click="goDetail(index + 30)">
         </div>
       </div>
       <div class="back" @click="backHome">< 返回</div>
