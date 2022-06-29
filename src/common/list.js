@@ -96,7 +96,6 @@ import image95 from '../assets/95.jpg'
 import image96 from '../assets/96.jpg'
 import image97 from '../assets/97.jpg'
 import image98 from '../assets/98.jpg'
-import image99 from '../assets/99.jpg'
 
 export default [
   {
@@ -486,10 +485,6 @@ export default [
   },
   {
     image: image98,
-    content: ``
-  },
-  {
-    image: image99,
     content: ``
   }
 ]
