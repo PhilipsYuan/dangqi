@@ -218,6 +218,7 @@ import image217 from '../assets/217.png'
 import image218 from '../assets/218.png'
 import image219 from '../assets/219.png'
 import image220 from '../assets/220.png'
+import image222 from '../assets/222.png'
 import image3a1 from '../assets/3-1.png'
 import image4a1 from '../assets/4-1.png'
 import image11a1 from '../assets/11-1.png'
@@ -350,7 +351,7 @@ export default [
   {
     image: image11,
     tm: image11a1,
-    content: `旗面红色，其:长宽为3:2。其中央置金黄色五角星一个，其中置毛主席例面剪影。其意义为:“不可战胜的毛泽东的旗帜。”`
+    content: `旗面红色，其:长宽为3:2。其中央置金黄色五角星一个，其中置毛主席侧面剪影。其意义为:“不可战胜的毛泽东的旗帜。”`
   },
   {
     image: image12,
@@ -445,7 +446,7 @@ export default [
   {
     image: image33,
     tm: image33a1,
-    content: `一、中国社会性质，中国革命两大阶段，共产党最低纲领和最高纲领。二、黄色象征中华名族，中国社会（中间大，两端小）两条红线象征反帝、反封建，两大革命任务。三、红色三角形象征社会主义阶级，图案象征工农兵组成的历史的轮，十二轮象征时间，代表每时每刻不断旋转着，领导着中国各个阶级，带动革命任务永远前行。`
+    content: `一、中国社会性质，中国革命两大阶段，共产党最低纲领和最高纲领。二、黄色象征中华民族，中国社会（中间大，两端小）两条红线象征反帝、反封建，两大革命任务。三、红色三角形象征社会主义阶级，图案象征工农兵组成的历史的轮，十二轮象征时间，代表每时每刻不断旋转着，领导着中国各个阶级，带动革命任务永远前行。`
   },
   {
     image: image34,
@@ -893,7 +894,7 @@ P40
 `},
   {image: image209, content: ``},
   {image: image210, content: ``},
-  {image: image211, content: ``},
+  // {image: image211, content: ``},
   {image: image212, content: ``},
   {image: image213, content: ``},
   {image: image214, tm: image214a1, content: `武装工农，进行武装斗争。轮代表工，锄代表农，枪代表武装。
@@ -909,4 +910,5 @@ P40
 指南针——象征我党及毛泽东同志正确的目标、方针、政策。黑白二色有庄重、高尚和正直之感。而且指南针是中国的发明，代表我党是中国历史的产物，是从中国的土地上生长起来的。
 黄色五角星——象征我党是全国人民胜利与光明的前途
 `},
+  {image: image222, tm: image222a1, content: `黄色代表中国，轮是革命车轮，齿表示日以继夜，日夜不息。`},
 ]

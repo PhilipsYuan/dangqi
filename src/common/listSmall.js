@@ -218,7 +218,7 @@ import image217 from '../assets/small/217.jpg'
 import image218 from '../assets/small/218.jpg'
 import image219 from '../assets/small/219.jpg'
 import image220 from '../assets/small/220.jpg'
-
+import image222 from '../assets/small/222.jpg'
 export default [
   {
     image: image1,
@@ -718,7 +718,7 @@ export default [
   {image: image208, content: ``},
   {image: image209, content: ``},
   {image: image210, content: ``},
-  {image: image211, content: ``},
+  // {image: image211, content: ``},
   {image: image212, content: ``},
   {image: image213, content: ``},
   {image: image214, content: ``},
@@ -728,4 +728,5 @@ export default [
   {image: image218, content: ``},
   {image: image219, content: ``},
   {image: image220, content: ``},
+  {image: image222, content: ``},
 ]
