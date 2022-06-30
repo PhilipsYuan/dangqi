@@ -605,11 +605,6 @@ export default [
     image: image97,
     content: ``
   },
-  {
-    image: image98,
-    content: ``
-  },
-  {image: image98, content: ``},
   {image: image98, content: ``},
   {image: image99, content: ``},
   {image: image100, content: ``},

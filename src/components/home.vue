@@ -1,18 +1,34 @@
 <template>
   <div class="hello">
     <div class="content">
-      <div class="all-content">
-        <div class="first-line">
-          <img class="first" src="../assets/small/logo1.jpg.png">
-          <div class="flag-list">
-            <img v-for="(item, index) in list.slice(0, 30)" :src="item.image" @click="goDetail(index)">
+      <el-carousel class="carousel" :autoplay="false">
+        <el-carousel-item>
+          <div class="all-content">
+            <div class="first-line">
+              <img class="first" src="../assets/small/logo1.jpg.png">
+              <div class="flag-list">
+                <img v-for="(item, index) in list.slice(0, 34)" :src="item.image" @click="goDetail(index)">
+              </div>
+            </div>
+            <div class="flag-list">
+              <img v-for="(item, index) in list.slice(34, 110)" :src="item.image" @click="goDetail(index + 34)">
+            </div>
           </div>
-        </div>
-        <div class="flag-list">
-          <img v-for="(item, index) in list.slice(30)" :src="item.image" @click="goDetail(index + 30)">
-        </div>
-      </div>
-      <div class="back" @click="backHome">< 返回</div>
+        </el-carousel-item>
+        <el-carousel-item>
+          <div class="all-content">
+            <div class="first-line">
+              <img class="first" src="../assets/small/logo1.jpg.png">
+              <div class="flag-list">
+                <img v-for="(item, index) in list.slice(110, 144)" :src="item.image" @click="goDetail(index + 110)">
+              </div>
+            </div>
+            <div class="flag-list">
+              <img v-for="(item, index) in list.slice(144)" :src="item.image" @click="goDetail(index + 144)">
+            </div>
+          </div>
+        </el-carousel-item>
+      </el-carousel>
     </div>
   </div>
 </template>
@@ -50,18 +66,22 @@ export default {
   top: 0;
   right: 0;
   bottom: 0;
+
 }
-.all-content {
-  background: #de280f;
-  width: 60em;
-  margin: auto;
+.carousel {
+  width: 67em;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate( -50%, -50%);
 }
+.all-content {
+  background: #de280f;
+  width: 67em;
+  margin: auto;
+}
 .first-line {
-  width: 63em;
+  width: 67em;
   display: flex;
   align-items: flex-end;
 }
@@ -82,7 +102,7 @@ img {
 }
 .first {
   width: 6.8em;
-  height: 6.8em;
+  height: 13.6em;
   border: none;
 }
 .back {
@@ -98,5 +118,12 @@ img {
   position: absolute;
   bottom:2em;
   opacity: 0;
+}
+
+</style>
+<style>
+.el-carousel__container {
+  position: relative;
+  height: 34em;
 }
 </style>
