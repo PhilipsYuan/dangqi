@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <div class="content">
-      <el-carousel class="carousel" :autoplay="false">
+      <el-carousel class="carousel" trigger="click" :autoplay="false">
         <el-carousel-item>
           <div class="all-content">
             <div class="first-line">
@@ -124,6 +124,6 @@ img {
 <style>
 .el-carousel__container {
   position: relative;
-  height: 34em;
+  height: 34em !important;
 }
 </style>
