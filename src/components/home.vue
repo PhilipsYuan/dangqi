@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <div class="content">
-      <el-carousel class="carousel" trigger="click" :autoplay="false">
+      <el-carousel class="carousel" :initial-index="current" trigger="click" :autoplay="false" @change="change">
         <el-carousel-item>
           <div class="all-content">
             <div class="first-line">
@@ -39,17 +39,25 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      list: list
+      list: list,
+      current: 0
     }
+  },
+  mounted() {
+    this.current = this.$route.params.current
   },
   methods: {
     goDetail(index) {
       this.$router.push({
         name: 'detail',
         params: {
-          index: index
+          index: index,
+          current: this.current
         }
       })
+    },
+    change(value) {
+      this.current = value
     },
     backHome() {
       window.location.href = 'http://localhost/'

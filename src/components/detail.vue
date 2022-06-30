@@ -19,6 +19,7 @@ export default {
   name: 'detail',
   data() {
     return {
+      current: 0,
       image: null,
       text: null,
       tm: null
@@ -26,6 +27,7 @@ export default {
   },
   mounted() {
     let item = list[this.$route.params.index]
+    this.current = this.$route.params.current
     this.image = item.image
     this.text = item.content
     this.tm = item.tm
@@ -39,7 +41,10 @@ export default {
   methods: {
     backHome() {
       this.$router.push({
-        name: 'home'
+        name: 'home',
+        params: {
+          current: this.current
+        }
       })
     }
   }
